@@ -1,5 +1,5 @@
-import { Flex, Heading, HStack, Link } from "@chakra-ui/react";
-
+import { Flex, Heading, HStack, Icon, Link } from "@chakra-ui/react";
+import { IoHomeOutline } from "react-icons/io5";
 function Header() {
   return (
     <Flex
@@ -13,7 +13,10 @@ function Header() {
         <Heading color="white">MY Logo</Heading>
       </Flex>
       <Flex>
-        <HStack color="white">
+        <HStack spacing="30px" color="white">
+          <Link>
+            <Icon as={IoHomeOutline} h={6} w={6} />
+          </Link>
           <Link>FEATURES</Link>
           <Link>PRODUCTS</Link>
           <Link>TESTIMONIALS</Link>
